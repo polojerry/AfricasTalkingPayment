@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonStartPayment.setOnClickListener {
             if (validateInput()) {
-                startCheckOutProcess(binding.textUserNumber.text.toString())
+                startCheckOutProcess()
             }
         }
     }
@@ -52,11 +52,11 @@ class MainActivity : AppCompatActivity() {
         return isValid
     }
 
-    private fun startCheckOutProcess(num: String) {
+    private fun startCheckOutProcess() {
 
         val productName = "Apewe Fish"
 
-        val phoneNumber = "+$num"
+        val phoneNumber = "+254790689212"
 
         val currencyCode = "KES"
 
